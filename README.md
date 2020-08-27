@@ -23,7 +23,8 @@ Useful scripts and more!
     ```
 - Add Dock Space-tiles
     
-    ```defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
+    ```bash
+    defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
     ```
 
 ### Other
