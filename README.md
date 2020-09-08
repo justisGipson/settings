@@ -21,6 +21,11 @@ Useful scripts and more!
     ```bash
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     ```
+- Add Dock Space-tiles
+    
+    ```bash
+    defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock
+    ```
 
 ### Other
 
