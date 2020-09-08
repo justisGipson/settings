@@ -122,7 +122,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 alias ls='colorls --sd -lh'
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES'
 alias shownone='defaults write com.apple.finder AppleShowAllFiles NO'
-alias brewup='brew update && brew upgrade && brew cask upgrade && brew cleanup; brew doctor'
+alias brewup='brew update && brew upgrade && brew upgrade --cask && brew cleanup; brew doctor'
 alias npmup='npm update -g'
 alias vbm='VBoxManage'
 alias zshconfig="open ~/.zshrc"
