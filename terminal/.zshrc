@@ -175,6 +175,7 @@ if type brew &>/dev/null; then
 	compinit
 fi
 
-# variables...
+# Stuff I want, but can't keep alive in here...
+
 # BATTLVL=$(ioreg -r -l -n AppleHSBluetoothDevice | egrep '"BatteryPercent" = |^  \|   "Bluetooth Product Name" = '| sed 's/  |   "Bluetooth Product Name" = "Magic Mouse 2"/  \|  Mouse:/' | sed 's/  |   "Bluetooth Product Name" = "Magic Keyboard with Numeric Keypad"/  \|  Keyboard:/'| sed 's/  |   |       "BatteryPercent" = / /'); echo $BATTLVL 
 
