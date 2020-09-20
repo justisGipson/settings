@@ -138,9 +138,6 @@ alias status='s status'
 alias next='s next'
 alias last='s prev'
 
-# PHP/Composer
-export PATH=$PATH:~/.composer/vendor/bin
-
 . /usr/local/etc/profile.d/z.sh
 
 # HomeBrew sbin
