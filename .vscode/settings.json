@@ -1,7 +1,7 @@
 {
 	"bracketPairColorizer.forceUniqueOpeningColor": true,
 	"color-highlight.markerType": "outlined",
-	"css.remoteStyleSheets": [ "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"],
+	"css.remoteStyleSheets": [ "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"],
 	"cSpell.userWords": [
 			"USERPOOL",
 			"a",
