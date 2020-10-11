@@ -109,8 +109,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
 POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-remotebranch git-tagname)
 
-
-
 source ~/powerlevel9k/powerlevel9k.zsh-theme
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
@@ -122,10 +120,13 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 alias ls='colorls --sd -lh'
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES'
 alias shownone='defaults write com.apple.finder AppleShowAllFiles NO'
+
 alias brewup='brew update && brew upgrade && brew upgrade --cask && brew cleanup; brew doctor'
 alias npmup='npm update -g'
+
 alias vbm='VBoxManage'
 alias zshconfig="open ~/.zshrc"
+
 alias mkdir='mkdir -p'
 alias py3='python3 -q'
 alias tf='terraform'
@@ -165,6 +166,7 @@ if [ -f '/Users/justisgipson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ju
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/justisgipson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/justisgipson/google-cloud-sdk/completion.zsh.inc'; fi
+
 if type brew &>/dev/null; then
 	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
