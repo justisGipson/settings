@@ -1,4 +1,4 @@
-# Useful Stuff
+# Dotfiles
 
 Useful scripts and more!
 
