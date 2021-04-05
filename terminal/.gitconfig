@@ -1,0 +1,60 @@
+[credential]
+	helper = osxkeychain
+
+[core]
+	editor = nano
+	pager = delta
+	attributesfile = /Users/jgipson/.gitattributes
+
+[interactive]
+    	diffFilter = delta --color-only
+[init]
+	defaultBranch = main
+
+[color]
+  	diff = always
+	status = always
+	branch = always
+	interactive = always
+	decoration = always
+	ui = true
+
+[color "status"]
+  	added = green
+	changed = red bold
+	untracked = magenta bold
+
+[color "branch"]
+	current = yellow reverse
+	local = green
+	remote = yellow
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[delta]
+    	features = side-by-side line-numbers decorations
+	whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+	commit-decoration-style = bold cyan box ul
+	file-style = bold green ul
+	file-decoration-style = none
+
+[user]
+	name = Justis
+	email = jgipson@codelicious.com
+
+[github]
+	user = justisGipson
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
